@@ -1,6 +1,3 @@
-<?php require_once "header.php"; ?>
-<?php require_once "menu.php"; ?>
-
 <h1>Deixe sua mensagem</h1>
 <form role="form" method="get" action="">
 	<div class="form-group">
@@ -35,5 +32,3 @@ if($_GET) {
 	}
 }
 ?>
-
-<?php require_once "footer.php"; ?>

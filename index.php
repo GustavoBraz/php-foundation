@@ -1,10 +1,9 @@
-<?php require_once "header.php"; ?>
-<?php require_once "menu.php"; ?>
+<?php
+require_once "rotasValidas.php"; // Array de rotas válidas
+require_once "functions.php"; // Arquivo de funções
+require_once "header.php"; // Arquivo com o html do header
+require_once "menu.php"; // Arquivo com o html do menu
 
-<!-- Jumbotron -->
-<div class="jumbotron">
-	<h1>PHP Foundation</h1>
-	<p class="lead">Primeiro entregável do capítulo PHP Foundation. Projeto fase 1</p>
-</div>
+require_once verificarRota($_SERVER,$rotasValidas); // Conteúdo da página ou erro 404
 
-<?php require_once "footer.php"; ?>
+require_once "footer.php"; // Arquivo com o html do footer
