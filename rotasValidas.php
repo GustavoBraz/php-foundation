@@ -1,9 +1,10 @@
 <?php
 
 $rotasValidas = [
-	'contato',
-	'empresa',
-	'home',
-	'produto',
-	'servico'
+	'' => 'home',
+	'contato' => 'contato',
+	'empresa' => 'empresa',
+	'home' => 'home',
+	'produto' => 'produto',
+	'servico' => 'servico'
 ];
