@@ -5,8 +5,9 @@ function verificarRota($server,$rotasValidas) {
 	$path = preg_replace('/\//', '', $rota['path'], 1);
 
 	if( array_key_exists($path, $rotasValidas) ) {
-		return "pages/".$rotasValidas[$path].".php";
+		require_once "pages/".$rotasValidas[$path].".php";
+	} else {
+		http_response_code(404);
+		require_once "pages/error.php";
 	}
-
-	return "pages/error.php";
 }
